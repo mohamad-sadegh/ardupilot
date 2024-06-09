@@ -9,8 +9,8 @@ extern const AP_HAL::HAL& hal;
 #define WPNAV_WP_RADIUS                 200.0f      // default waypoint radius in cm
 #define WPNAV_WP_RADIUS_MIN               5.0f      // minimum waypoint radius in cm
 #define WPNAV_WP_SPEED_UP               250.0f      // default maximum climb velocity
-#define WPNAV_WP_SPEED_DOWN             150.0f      // default maximum descent velocity
-#define WPNAV_WP_ACCEL_Z_DEFAULT        100.0f      // default vertical acceleration between waypoints in cm/s/s
+#define WPNAV_WP_SPEED_DOWN             35000.0f      // default maximum descent velocity
+#define WPNAV_WP_ACCEL_Z_DEFAULT        5000.0f      // default vertical acceleration between waypoints in cm/s/s
 
 const AP_Param::GroupInfo AC_WPNav::var_info[] = {
     // index 0 was used for the old orientation matrix
@@ -64,7 +64,7 @@ const AP_Param::GroupInfo AC_WPNav::var_info[] = {
     // @DisplayName: Waypoint Vertical Acceleration
     // @Description: Defines the vertical acceleration in cm/s/s used during missions
     // @Units: cm/s/s
-    // @Range: 50 500
+    // @Range: 50 5000
     // @Increment: 10
     // @User: Standard
     AP_GROUPINFO("ACCEL_Z",     6, AC_WPNav, _wp_accel_z_cmss, WPNAV_WP_ACCEL_Z_DEFAULT),

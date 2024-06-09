@@ -30,6 +30,35 @@
 #endif
 
 const AP_Param::Info Copter::var_info[] = {
+    // @Param: DIV_THROTTLE
+    // @DisplayName: Div MAXIMUM THROTTLE 
+    // @Description: ADDED BY MIMSAD
+    // @Range: 0 1
+    // @User: Advanced
+    GSCALAR(div_throttle, "DIV_THROTTLE", DIV_THROTTLE_DEFAULT),
+
+
+    // @Param: DIV_YAW_ANGLE
+    // @DisplayName: DIV YAW ANGLE 
+    // @Description: ADDED BY MIMSAD
+    // @Range: 0 1
+    // @User: Advanced
+    GSCALAR(div_yaw_angle, "DIV_YAW_ANGLE", DIV_YAW_ANGLE_DEFAULT),
+
+    // @Param: DIV_ROLL_ANGLE
+    // @DisplayName: DIV ROLL ANGLE 
+    // @Description: ADDED BY MIMSAD
+    // @Range: 0 1
+    // @User: Advanced
+    GSCALAR(div_roll_angle, "DIV_ROLL_ANGLE", DIV_ROLL_ANGLE_DEFAULT),
+
+    // @Param: DIV_PITCH_ANGLE
+    // @DisplayName: DIV PITCH ANGLE 
+    // @Description: ADDED BY MIMSAD
+    // @Range: 0 1
+    // @User: Advanced
+    GSCALAR(div_pitch_angle, "DIV_PITCH_ANGLE", DIV_PITCH_ANGLE_DEFAULT),
+
     // @Param: FORMAT_VERSION
     // @DisplayName: Eeprom format version number
     // @Description: This value is incremented when changes are made to the eeprom format

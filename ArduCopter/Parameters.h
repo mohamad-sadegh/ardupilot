@@ -382,6 +382,12 @@ public:
         k_param_throw_altitude_min,
         k_param_throw_altitude_max,
 
+        // Div Mode - added by MimSad
+        k_param_div_throttle,
+        k_param_div_pitch_angle,
+        k_param_div_roll_angle,
+        k_param_div_yaw_angle,
+
         // the k_param_* space is 9-bits in size
         // 511: reserved
     };
@@ -685,6 +691,12 @@ public:
     AP_Float pldp_range_finder_maximum_m;
     AP_Float pldp_delay_s;
     AP_Float pldp_descent_speed_ms;
+    
+    // Div Mode - added by MimSad
+    AP_Float div_throttle;
+    AP_Float div_yaw_angle;
+    AP_Float div_roll_angle;
+    AP_Float div_pitch_angle;
 };
 
 extern const AP_Param::Info        var_info[];

@@ -13,7 +13,7 @@
 #include <AC_Avoidance/AC_Avoid.h>                 // Stop at fence library
 
 // maximum velocities and accelerations
-#define WPNAV_ACCELERATION              250.0f      // maximum horizontal acceleration in cm/s/s that wp navigation will request
+#define WPNAV_ACCELERATION              3500.0f      // maximum horizontal acceleration in cm/s/s that wp navigation will request
 
 class AC_WPNav
 {

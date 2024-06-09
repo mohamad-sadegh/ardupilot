@@ -615,3 +615,19 @@
 #ifndef USER_PARAMS_ENABLED
   #define USER_PARAMS_ENABLED DISABLED
 #endif
+
+#ifndef DIV_THROTTLE_DEFAULT
+ # define DIV_THROTTLE_DEFAULT      0.95     // default value for my new parameter
+#endif
+
+#ifndef DIV_YAW_ANGLE_DEFAULT
+ # define DIV_YAW_ANGLE_DEFAULT      0     // default value for my new parameter
+#endif
+
+#ifndef DIV_ROLL_ANGLE_DEFAULT
+ # define DIV_ROLL_ANGLE_DEFAULT      0     // default value for my new parameter
+#endif
+
+#ifndef DIV_PITCH_ANGLE_DEFAULT
+ # define DIV_PITCH_ANGLE_DEFAULT      0.5     // default value for my new parameter
+#endif
