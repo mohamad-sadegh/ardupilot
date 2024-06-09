@@ -41,6 +41,12 @@ Mode *Copter::mode_from_mode_num(const Mode::Number mode)
             break;
 #endif
 
+#if MODE_DIV_ENABLED == ENABLED
+        case Mode::Number::DIV:
+            ret = &mode_div;
+            break;
+#endif
+
         case Mode::Number::STABILIZE:
             ret = &mode_stabilize;
             break;

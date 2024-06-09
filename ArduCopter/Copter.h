@@ -972,6 +972,11 @@ private:
 #else
     ModeAcro mode_acro;
 #endif
+
+#if MODE_DIV_ENABLED == ENABLE
+    ModeDIV mode_div;
+#endif
+
 #endif
     ModeAltHold mode_althold;
 #if MODE_AUTO_ENABLED == ENABLED

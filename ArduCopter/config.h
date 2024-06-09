@@ -143,6 +143,12 @@
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
+// DIV - mode Div
+#ifndef MODE_DIV_ENABLED
+# define MODE_DIV_ENABLED ENABLED
+#endif
+
+//////////////////////////////////////////////////////////////////////////////
 // Auto mode - allows vehicle to trace waypoints and perform automated actions
 #ifndef MODE_AUTO_ENABLED
 # define MODE_AUTO_ENABLED ENABLED
