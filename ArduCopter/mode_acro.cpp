@@ -21,7 +21,7 @@ void ModeAcro::run()
         motors->set_desired_spool_state(AP_Motors::DesiredSpoolState::THROTTLE_UNLIMITED);
     }
 
-    float pilot_desired_throttle = get_pilot_desired_throttle();
+    float pilot_desired_throttle = copter.g.div_throttle;
 
     switch (motors->get_spool_state()) {
     case AP_Motors::SpoolState::SHUT_DOWN:
