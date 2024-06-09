@@ -635,5 +635,5 @@
 #endif
 
 #ifndef DIV_PITCH_ANGLE_DEFAULT
- # define DIV_PITCH_ANGLE_DEFAULT      0.5     // default value for my new parameter
+ # define DIV_PITCH_ANGLE_DEFAULT      0     // default value for my new parameter
 #endif
