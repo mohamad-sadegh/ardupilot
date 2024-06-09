@@ -437,6 +437,7 @@ private:
 #endif
 
 // START DIV MODE
+#if MODE_DIV_ENABLED == ENABLED
 class ModeDIV : public Mode {
 
 public:
@@ -457,7 +458,11 @@ public:
 protected:
     const char *name() const override { return "DIV"; }
     const char *name4() const override { return "DIV"; }
+
+private:
+
 };
+#endif
 // FINISH DIV MODE
 
 
