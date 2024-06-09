@@ -484,6 +484,12 @@ public:
     AP_Int8                 acro_trainer;
 #endif
 
+    // Div Mode - added by MimSad
+    AP_Float div_throttle;
+    AP_Int16 div_yaw_angle;
+    AP_Int16 div_roll_angle;
+    AP_Int16 div_pitch_angle;
+
     // Note: keep initializers here in the same order as they are declared
     // above.
     Parameters()
@@ -692,11 +698,6 @@ public:
     AP_Float pldp_delay_s;
     AP_Float pldp_descent_speed_ms;
     
-    // Div Mode - added by MimSad
-    AP_Float div_throttle;
-    AP_Float div_yaw_angle;
-    AP_Float div_roll_angle;
-    AP_Float div_pitch_angle;
 };
 
 extern const AP_Param::Info        var_info[];
