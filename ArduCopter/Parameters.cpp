@@ -1221,9 +1221,9 @@ const AP_Param::GroupInfo ParametersG2::var_info2[] = {
     // @DisplayName: Payload Place decent speed
     // @Description: The maximum vertical decent velocity in m/s. If 0 LAND_SPEED value is used.
     // @Units: m/s
-    // @Range: 0 5
+    // @Range: 0 50
     // @User: Standard
-    AP_GROUPINFO("PLDP_SPEED_DN", 4, ParametersG2, pldp_descent_speed_ms, 0.0),
+    AP_GROUPINFO("PLDP_SPEED_DN", 4, ParametersG2, pldp_descent_speed_ms, 50.0),
 
     // @Param: SURFTRAK_TC
     // @DisplayName: Surface Tracking Filter Time Constant

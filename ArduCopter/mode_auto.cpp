@@ -2,7 +2,7 @@
 
 #if MODE_AUTO_ENABLED == ENABLED
 
-/*
+/* 
  * Init and run calls for auto flight mode
  *
  * This file contains the implementation for Land, Waypoint navigation and Takeoff from Auto mode
